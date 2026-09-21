@@ -62,3 +62,9 @@ func (m *Model) View() string {
 
 	return labelStyle.Render(m.label) + " " + m.input.View()
 }
+
+func (m *Model) Value() string {
+	return m.input.Value()
+}
+
+var _ optionslist.Field = (*Model)(nil)

@@ -2,23 +2,16 @@ module github.com/sam-laister/sam-laister-bubbletea-components-library
 
 go 1.25.0
 
-require (
-	charm.land/lipgloss/v2 v2.0.6
-	github.com/charmbracelet/lipgloss v1.1.0
-)
+require github.com/charmbracelet/lipgloss v1.1.0
 
 require (
 	github.com/atotto/clipboard v0.1.4 // indirect
-	github.com/charmbracelet/ultraviolet v0.0.0-20260811164956-006e29f97886 // indirect
-	github.com/charmbracelet/x/termios v0.1.1 // indirect
-	github.com/charmbracelet/x/windows v0.2.2 // indirect
 	github.com/clipperhouse/displaywidth v0.11.0 // indirect
 	github.com/clipperhouse/uax29/v2 v2.7.0 // indirect
 	github.com/erikgeiser/coninput v0.0.0-20211004153227-1c3628e74d0f // indirect
 	github.com/mattn/go-localereader v0.0.1 // indirect
 	github.com/muesli/ansi v0.0.0-20230316100256-276c6243b2f6 // indirect
 	github.com/muesli/cancelreader v0.2.2 // indirect
-	golang.org/x/sync v0.22.0 // indirect
 	golang.org/x/text v0.3.8 // indirect
 )
 

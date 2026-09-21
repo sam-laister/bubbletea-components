@@ -1,10 +1,10 @@
 package list
 
 import (
-	"charm.land/lipgloss/v2"
 	"github.com/charmbracelet/bubbles/key"
 	"github.com/charmbracelet/bubbles/viewport"
 	tea "github.com/charmbracelet/bubbletea"
+	"github.com/charmbracelet/lipgloss"
 	"github.com/sam-laister/sam-laister-bubbletea-components-library/internal/clamp"
 	"github.com/sam-laister/sam-laister-bubbletea-components-library/theme"
 )
