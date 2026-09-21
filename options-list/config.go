@@ -1,4 +1,4 @@
-package options
+package optionslist
 
 type config struct {
 	keyMap KeyMap

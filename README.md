@@ -8,7 +8,7 @@ This project is for personal use, but feel free to contribute if it comes in han
    - Readonly
  - Options List
    - Checkbox
-   - Text input - TBD
+   - Text input
   
 ## Examples
 

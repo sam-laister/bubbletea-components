@@ -3,7 +3,7 @@ package checkbox
 import (
 	"github.com/charmbracelet/bubbles/key"
 	tea "github.com/charmbracelet/bubbletea"
-	"github.com/sam-laister/sam-laister-bubbletea-components-library/options"
+	optionslist "github.com/sam-laister/sam-laister-bubbletea-components-library/options-list"
 	"github.com/sam-laister/sam-laister-bubbletea-components-library/theme"
 )
 
@@ -49,7 +49,7 @@ func (c *Model) Focused() bool {
 	return c.focused
 }
 
-func (c *Model) Update(msg tea.Msg) (options.Field, tea.Cmd) {
+func (c *Model) Update(msg tea.Msg) (optionslist.Field, tea.Cmd) {
 	var cmd tea.Cmd
 
 	switch msg := msg.(type) {
@@ -83,4 +83,4 @@ func (c *Model) Checked() bool {
 	return c.checked
 }
 
-var _ options.Field = (*Model)(nil)
+var _ optionslist.Field = (*Model)(nil)

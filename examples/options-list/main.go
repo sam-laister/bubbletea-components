@@ -6,12 +6,13 @@ import (
 
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/sam-laister/sam-laister-bubbletea-components-library/checkbox"
-	"github.com/sam-laister/sam-laister-bubbletea-components-library/options"
+	optionslist "github.com/sam-laister/sam-laister-bubbletea-components-library/options-list"
+	textinput "github.com/sam-laister/sam-laister-bubbletea-components-library/text-input"
 	"github.com/sam-laister/sam-laister-bubbletea-components-library/theme"
 )
 
 type root struct {
-	options options.Model
+	options optionslist.Model
 }
 
 func (r root) Init() tea.Cmd {
@@ -39,16 +40,16 @@ func (r root) View() string {
 }
 
 func main() {
-	items := []options.Field{
+	items := []optionslist.Field{
 		checkbox.New("Kid A", false, checkbox.WithTheme(theme.Default())),
 		checkbox.New("Blonde", false, checkbox.WithTheme(theme.Default())),
 		checkbox.New("To Pimp a Butterfly", false, checkbox.WithTheme(theme.Default())),
-		checkbox.New("In Rainbows", false, checkbox.WithTheme(theme.Default())),
-		checkbox.New("Channel Orange", false, checkbox.WithTheme(theme.Default())),
+		textinput.New("In Rainbows", "10", textinput.WithTheme(theme.Default())),
+		textinput.New("Channel Orange", "5", textinput.WithTheme(theme.Default())),
 	}
 
 	m := root{
-		options: options.New(items, theme.Default()),
+		options: optionslist.New(items, theme.Default()),
 	}
 
 	if _, err := tea.NewProgram(m, tea.WithAltScreen()).Run(); err != nil {
